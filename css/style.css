@@ -22,8 +22,66 @@
   color: inherit;
 }
 
+body {
+  background: #44403F;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+}
+
 .logo {
   font-family: "Bold";
+  color: rgb(255, 255, 255);
+  letter-spacing: 3px;
+  font-size: 25px;
+}
+
+.search {
+  display: inline-flex;
+  color: rgb(207, 207, 207);
+  background: rgb(80, 75, 74);
+  padding: 10px 15px;
+  border-radius: 10px;
+}
+.search input {
+  width: 100%;
+  background: none;
+  border: none;
+}
+
+.contacts {
+  color: rgb(207, 207, 207);
+  font-family: "Regular";
+  font-size: 12px;
+}
+.contacts i {
+  background: rgb(97, 137, 103);
+  color: rgb(207, 207, 207);
+  width: 16px;
+  height: 16px;
+}
+.contacts span {
+  font-family: "Bold";
+  color: #fff;
+  font-size: 16px;
+}
+
+.header-btn button {
+  background: rgb(97, 137, 103);
+  border: inherit;
+  color: #fff;
+  width: 150px;
+  height: 50px;
+  border-radius: 10px;
+}
+.header-btn span {
+  padding: 5px;
+  border-radius: 100px;
+  background: #fff;
+  color: rgb(64, 60, 59);
+  border-left: solid 1px #fff;
 }
 
 /*# sourceMappingURL=style.css.map */
