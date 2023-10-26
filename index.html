@@ -3,14 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/hamburgers.css" />
     <link rel="stylesheet" href="./css/all.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <title>Document</title>
   </head>
   <body>
     <div class="wrapper">
-      <header class="header">
+      <header class="header container">
         <div class="navbar">
+          <button class="hamburger hamburger--collapse" type="button">
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+            <div class="hamburger-subtitel__text">Меню</div>
+          </button>
           <div class="logo">
             <a href="#">LOGOS</a>
           </div>
@@ -21,16 +28,31 @@
           </div>
           <div class="contacts">
             <i class="fa-solid fa-phone-volume"></i>
-            <a href="#"
-              >Контакты: <br />
-              <span>+7 (917) 510-57-59</span></a
-            >
+            <div class="number">
+              <a href="#"
+                >Контакты: <br />
+                <span>+7 (917) 510-57-59</span></a
+              >
+            </div>
           </div>
           <div class="header-btn">
-            <button>Корзина <span>4</span></button>
+            <button>
+              <span class="basket">Корзина</span> <span class="counter">4</span>
+            </button>
           </div>
         </div>
       </header>
     </div>
+
+    <script>
+      // Look for .hamburger
+      var hamburger = document.querySelector(".hamburger");
+      // On click
+      hamburger.addEventListener("click", function () {
+        // Toggle class "is-active"
+        hamburger.classList.toggle("is-active");
+        // Do something else, like open/close menu
+      });
+    </script>
   </body>
 </html>

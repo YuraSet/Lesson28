@@ -6,11 +6,18 @@
 body
     background: #44403F
 
-.header
+.container
+    max-width: 1180px
+    margin: 0 auto
 
 .navbar
     display: flex
     align-items: center
+    justify-content: space-between
+
+.hamburger-subtitel__text
+    font-family: "Bold"
+    color: rgba(255, 255, 255, 1)
 
 .logo
     font-family: "Bold"
@@ -24,6 +31,8 @@ body
     background: rgba(80, 75, 74, 1)
     padding: 10px 15px
     border-radius: 10px
+    flex-grow: 1
+    max-width: 555px
 
     input
         width: 100%
@@ -31,32 +40,55 @@ body
         border: none
 
 .contacts
+    display: flex
     color: rgba(207, 207, 207, 1)
     font-family: "Regular"
     font-size: 12px
+    gap: 5px
+    padding-right: 50px
+
     i
+        display: inline-flex
         background: rgba(97, 137, 103, 1)
+        border-radius: 100%
         color: rgba(207, 207, 207, 1)
-        width: 16px
-        height: 16px
+        align-items: center
+        justify-content: center
+        width: 32px
+        height: 32px
     span
         font-family: "Bold"
         color: #fff
         font-size: 16px
 
 .header-btn
-
     button
+        font-family: "Medium"
+        display: inline-flex
         background: rgba(97, 137, 103, 1)
+        align-items: center
+        justify-content: center
         border: inherit
         color: #fff
         width: 150px
         height: 50px
         border-radius: 10px
+        gap: 10px
 
-    span
-        padding: 5px
-        border-radius: 100px
-        background: #fff
-        color: rgba(64, 60, 59, 1)
-        border-left: solid 1px #fff
+.basket
+    display: flex
+    border-right: solid 1px rgba(255, 255, 255, 0.3)
+    height: 35px
+    align-items: center
+    padding: 15px
+
+.counter
+    display: flex
+    align-items: center
+    justify-content: center
+    padding: 5px
+    width: 24px
+    height: 24px
+    border-radius: 100%
+    background: #fff
+    color: rgba(64, 60, 59, 1)
